@@ -57,8 +57,7 @@ RUN pip install --no-cache-dir --upgrade pip==9.0.1 setuptools wheel && \
 
 ########## INSTALLATION STEPS ###################
 RUN git clone --branch master --recursive https://github.com/pranavshenoykp/Caffe2_Duplicate.git
-RUN ls
-RUN cd caffe2_Duplicate && mkdir build && cd build \
+RUN cd Caffe2_Duplicate && mkdir build && cd build \
     && cmake .. \
     -DCUDA_ARCH_NAME=Manual \
     -DCUDA_ARCH_BIN="35 52 60 61" \
